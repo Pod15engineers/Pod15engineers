@@ -1,5 +1,13 @@
-variable "environment" {}
-variable "domain-name" {}
+variable "environment" {
+  description = "Deployment environment"
+  type = string
+  default = "dev"
+}
+variable "domain-name" {
+  description = "Domain name"
+  type = string
+  default = "pod15engineers.online"
+}
 variable "nginx_ingress_lb_dns" {
   description = "DNS name of the NGINX Ingress Load Balancer"
   type        = string  
