@@ -80,13 +80,13 @@ variable "label_one" {
 variable "zone_name" {
   description = "Name of the DNS zone"
   type        = string
-  default     = "example.com"
+  default     = "pod15engineers.online"
 }
 
 variable "domain-name" {
   description = "Domain name to be created"
   type        = string
-  default     = "myapp.example.com"
+  default     = "myapp.pod15engineers.online"
 }
 
 variable "namecheap_api_user" {
@@ -164,5 +164,5 @@ variable "repository_name" {
 variable "email" {
   description = "Email address for notifications and certificates"
   type        = string
-  default     = "support@digitalwitchng.online"
+  default     = "pod15engineers@gmail.com"
 }
