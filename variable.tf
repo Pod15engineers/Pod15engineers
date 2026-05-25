@@ -83,7 +83,7 @@ variable "zone_name" {
   default     = "pod15engineers.online"
 }
 
-variable "domain-name" {
+variable "domain_name" {
   description = "Domain name to be created"
   type        = string
   default     = "myapp.pod15engineers.online"

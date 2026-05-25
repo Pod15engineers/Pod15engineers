@@ -3,7 +3,7 @@ variable "environment" {
   type = string
   default = "dev"
 }
-variable "domain-name" {
+variable "domain_name" {
   description = "Domain name"
   type = string
   default = "pod15engineers.online"
