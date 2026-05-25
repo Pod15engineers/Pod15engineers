@@ -15,8 +15,5 @@ domain_name = "pod15engineers.online"
 cluster_name = "eks-cluster"
 repository_name = "eks-repository"
 email = "pod15engineers@gmail.com"
-domain_name = "pod15engineers.online"
 db_instance_class = "db.t3.micro"
 db_allocated_storage = 20
-
-
