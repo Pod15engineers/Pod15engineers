@@ -1,0 +1,50 @@
+{
+  "version": 4,
+  "terraform_version": "1.15.4",
+  "serial": 39,
+  "lineage": "cf599ae5-d8fe-d750-adc5-43005100b0b7",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.eks-deployment",
+      "mode": "managed",
+      "type": "aws_ecr_repository",
+      "name": "foo1",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ecr:us-east-1:296651897181:repository/bank-frontend",
+            "encryption_configuration": [
+              {
+                "encryption_type": "AES256",
+                "kms_key": ""
+              }
+            ],
+            "force_delete": null,
+            "id": "bank-frontend",
+            "image_scanning_configuration": [
+              {
+                "scan_on_push": true
+              }
+            ],
+            "image_tag_mutability": "MUTABLE",
+            "name": "bank-frontend",
+            "region": "us-east-1",
+            "registry_id": "296651897181",
+            "repository_url": "296651897181.dkr.ecr.us-east-1.amazonaws.com/bank-frontend",
+            "tags": {},
+            "tags_all": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjoxMjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIwIn0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
+

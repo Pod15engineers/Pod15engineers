@@ -10,9 +10,7 @@ chown -R runner:runner /home/runner/_work
 TOKEN_URL="https://api.github.com/repos/${REPO}/actions/runners/registration-token"
 
 echo "Requesting registration token for $REPO..."
-RUNNER_TOKEN=$(curl -s -X POST \
-  -H "Authorization: token ${GITHUB_PAT}" \
-  "${TOKEN_URL}" | jq -r .token)
+RUNNER_TOKEN=$(curl -s -X POST -H "Authorization: token ${GITHUB_PAT}" "${TOKEN_URL}" | jq -r .token)
 
 echo "Registering runner: $RUNNER_NAME"
 ./config.sh --unattended \
